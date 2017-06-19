@@ -7,4 +7,5 @@
 * [伪静态](wei-jing-tai.md)
 * [命名规则](ming-ming-gui-ze.md)
 * [命名空间](ming-ming-kong-jian.md)
+* [开启 REST 模式的 API 接口功能](kai-qi-rest-mo-shi-de-api-jie-kou-gong-neng.md)
 
