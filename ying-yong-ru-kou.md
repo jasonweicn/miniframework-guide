@@ -28,5 +28,7 @@ require dirname(APP_PATH) . DIRECTORY_SEPARATOR . 'MiniFramework' . DIRECTORY_SE
 
 在引入引导程序前，你还可以像案例中一样，通过 define 命令定义一些 MiniFramework 的关键常量，例如用于显示报错信息的常量 SHOW\_ERROR 。
 
-提示：MiniFramework 运行所需的全部常量可以在引导程序 Bootstrap.php 中找到（1.0.0 版之前引导程序名为 Mini.php）。
+> 提示：MiniFramework 运行所需的全部常量可以在引导程序 Bootstrap.php 中找到（1.0.0 版之前引导程序名为 Mini.php）。
+
+
 
