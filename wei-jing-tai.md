@@ -19,3 +19,14 @@ RewriteRule !.(bmp|gif|ico|jpg|png|js|css)$ index.php
 
 在 nginx.conf 中，找到对应的站点，向 server{} 中添加如下设置：
 
+```
+location / {
+    index  index.html index.php;
+    if (!-e $request_filename) {
+        rewrite ^/(.*)$ /index.php last;
+    }
+}
+```
+
+
+
