@@ -1,5 +1,7 @@
 # 连接数据库
 
+---
+
 MiniFramework 目前只支持 MySQL 数据库，有手动和自动两种连接方式。
 
 ## 手动连接
@@ -60,7 +62,7 @@ class Info extends Model //自动连接数据库，必须继承核心类 Model
     {
         //加载 key 为 default 的数据库
         $db = $this->loadDb('default');
-        
+
         //do something...
     }
 }

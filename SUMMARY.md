@@ -8,5 +8,6 @@
 * [命名规则](ming-ming-gui-ze.md)
 * [命名空间](ming-ming-kong-jian.md)
 * [开启 REST 模式的 API 接口功能](kai-qi-rest-mo-shi-de-api-jie-kou-gong-neng.md)
-* [连接数据库](lian-jie-shu-ju-ku.md)
+* [使用数据库](shi-yong-shu-ju-ku.md)
+* [使用缓存](shi-yong-huan-cun.md)
 
