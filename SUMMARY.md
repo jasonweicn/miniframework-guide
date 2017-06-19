@@ -11,4 +11,5 @@
 * [使用数据库](shi-yong-shu-ju-ku.md)
 * [使用缓存](shi-yong-huan-cun.md)
 * [使用布局](shi-yong-bu-ju.md)
+* [全局函数](quan-ju-han-shu.md)
 
