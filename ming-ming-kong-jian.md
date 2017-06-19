@@ -23,7 +23,7 @@ class Index extends Action
 {
     function indexAction()
     {
-        //...
+        //do something...
     }
 }
 ```
@@ -39,7 +39,7 @@ class Info extends Model
 {
     public function getInfo()
     {
-        //...
+        //do something...
     }
 }
 ```

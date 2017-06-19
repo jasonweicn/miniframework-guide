@@ -14,11 +14,9 @@ define('REST_ON', true);
 
 `{"code":200,"msg":"success","data":"1.0.0"}`
 
-> 需要特别注意的是：如果你的项目中有使用 `Api` 命名的 Controller，将会因 REST 开启而失效，所有向 `Api` 的请求均会被指向 `App/Api` 目录。
+需要特别注意的是：如果你的项目中有使用 `Api` 命名的 Controller，将会因 REST 开启而失效，所有向 `Api` 的请求均会被指向 `App/Api` 目录。
 
 > 提示：MiniFramework 的 REST 接口支持输出 JSON 和 XML 两种数据格式，附带的 demo 中已经进行了演示。
-
-
 
 
 
