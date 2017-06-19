@@ -2,7 +2,7 @@
 
 ---
 
-MiniFramework 在设置了 Rewrite 规则后，可实现类似下面这种伪静态访问方法：
+MiniFramework 在设置了 Rewrite 规则后，可实现类似下面这种伪静态访问方式：
 
 `http://localhost/Controller/Action/param1/value1/param2/value2`
 
