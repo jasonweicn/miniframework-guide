@@ -12,7 +12,9 @@ MiniFramework 在设置了 Rewrite 规则后，可实现类似下面这种伪静
 
 ```
 RewriteEngine on
-RewriteRule !.(bmp|gif|ico|jpg|png|js|css)$ index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
 ```
 
 ## 运行于 Nginx 的设置方法
