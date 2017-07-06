@@ -12,5 +12,4 @@
 * [使用数据库](shi-yong-shu-ju-ku.md)
 * [使用缓存](shi-yong-huan-cun.md)
 * [使用布局](shi-yong-bu-ju.md)
-* [API接口版本调用方法](apijie-kou-ban-ben-diao-yong-fang-fa.md)
 
