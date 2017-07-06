@@ -6,3 +6,7 @@ MiniFramework 从 1.0.8 版本开始，新增了对于 REST 模式的 API 接口
 
 当某个 API 接口需要增加新版本时，开发者需要将对应的接口文件和类名增加后缀 `_VX` （X代表版本号），例如：`Info_V2.php`
 
+> 提示：MiniFramework 1.0.8 版本的源代码包中，已经提供了关于 API 接口版本调用的 demo 文件，分别是 Info.php 和 Info\_V2.php
+
+
+
