@@ -17,6 +17,7 @@ MiniFramework/
 |    |    |--- css/         css
 |    |    |--- img/         图片
 |    |    |--- js/          js
+|    |    |--- uploads/     上传文件存储目录
 |    |    |--- index.php    应用入口文件
 |    |
 |    |--- View/             视图
