@@ -29,16 +29,16 @@ if (! $res) {
 ```php
 // 配置数组
 $config = array(
-    
+
     // 文件保存的根目录
     'rootPath'  => PUBLIC_PATH . DS . 'uploads',
-    
+
     // 文件的大小限制（单位：Byte）
     'maxPath'   => 512000,
-    
+
     // 允许的类型
     'allowType' => 'bmp,gif,jpg,jpeg,png'
-    
+
 );
 
 // 实例化 Upload 类时，将配置数组作为参数传入
