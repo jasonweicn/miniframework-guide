@@ -2,7 +2,7 @@
 
 ---
 
-MiniFramework 从 1.2.0 版开始，新增了支持通过自带的 Upload 类实现文件的上传保存。
+MiniFramework 从 1.2.0 版本开始，新增了支持通过自带的 Upload 类实现文件的上传保存。
 
 示例代码如下：
 
