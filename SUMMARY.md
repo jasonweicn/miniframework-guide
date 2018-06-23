@@ -11,6 +11,7 @@
 * [API接口版本调用方法](apijie-kou-ban-ben-diao-yong-fang-fa.md)
 * [使用数据库](shi-yong-shu-ju-ku.md)
 * [使用缓存](shi-yong-huan-cun.md)
+* [使用会话](shi-yong-hui-hua.md)
 * [使用布局](shi-yong-bu-ju.md)
 * [上传文件](shang-chuan-wen-jian.md)
 

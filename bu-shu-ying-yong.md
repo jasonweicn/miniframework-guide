@@ -6,5 +6,5 @@ MiniFramework 支持主程序和WEB站点根目录分离部署的特性。你下
 
 `http://你的域名/index.php?c=index&a=index`
 
-如果，你可以通过浏览器访问类似上面这样的URL地址，并获得一个显示有“Hello World!”的页面，这说明你已经部署成功了。
+如果，你可以通过浏览器访问类似上面这样的 URL 地址，并获得一个显示有“Hello World!”的页面，这说明你已经部署成功了。
 

@@ -70,6 +70,8 @@ class Info extends Model // 自动连接数据库，必须继承核心类 Model
 
 > 提示：MiniFramework 的数据库自动连接功能，采用的是惰性连接机制，只会在下达了执行 SQL 语句命令时，才真正开始与数据库通讯建立连接，因此，你不必为开启自动连接功能而担心应用的性能问题。
 
+## 连贯操作查询数据
+
 MiniFramwork 从 1.2.0 版本开始，支持在 Model 模型类中，通过“连贯操作”方式查询数据，例如：
 
 ```php
@@ -83,10 +85,10 @@ class User extends Model // 继承 Model 模型类
     {
         // 设置当前使用的数据库（这里的 default 是数据库连接对象的名称）
         $this->useDb('default');
-        
+
         // 连贯操作方式查询 id=1 的记录
         $res = $this->where('id=1')->select();
-        
+
         // 输出查询结果
         dump($res);
     }
