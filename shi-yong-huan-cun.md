@@ -4,7 +4,7 @@
 
 MiniFramework 支持三种缓存方式，分别是：Memcached、Redis 和 File（磁盘文件存储）。
 
-## Memcached缓存
+## Memcached
 
 ```php
 $cache = \Mini\Cache::factory ('Memcache',
@@ -23,7 +23,7 @@ $test = $cache->get('test');
 
 > 提示：可以通过 `getMemcacheObj()` 来获得 Memcache 对象，以调用未在框架中封装的 Memcache 更多的方法。
 
-## Redis缓存
+## Redis
 
 ```php
 $cache = \Mini\Cache::factory ('Redis',
@@ -43,7 +43,7 @@ $test = $cache->get('test');
 
 > 提示：可以通过 `getRedisObj()` 来获得 Redis 对象，以调用未在框架中封装的 Redis 更多的方法。
 
-## File缓存
+## File
 
 ```php
 $cache = \Mini\Cache::factory ('File');
