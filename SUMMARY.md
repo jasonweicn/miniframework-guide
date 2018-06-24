@@ -14,4 +14,5 @@
 * [使用会话](shi-yong-hui-hua.md)
 * [使用布局](shi-yong-bu-ju.md)
 * [上传文件](shang-chuan-wen-jian.md)
+* [全局函数](quan-ju-han-shu.md)
 
