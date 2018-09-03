@@ -2,24 +2,13 @@
 
 ---
 
-MiniFramework 从 1.4.0 版本开始，新增了日志功能，开发者可通过定义 LOG\_ON 为 true 来开启日志功能。
+MiniFramework 从 1.4.0 版本开始，新增了日志功能，开发者可通过在应用的入口文件中定义 LOG\_ON 为 true 来开启日志功能。
 
 示例代码如下：
 
 ```php
-// 实例化 Upload 类
-$upload = new \Mini\Upload();
-
-// 调用 save 方法，将要保存的文件作为参数传入
-$res = $upload->save($_FILES['file']);
-
-// 保存成功时 $res 中的返回值为保存路径和文件名，失败时值为 false
-if (! $res) {
-    $errmsg = $upload->getErrorMsg();
-    echo $errmsg;
-} else {
-    dump($res);
-}
+// 开启日志（生产环境建议关闭）
+define('LOG_ON', true);
 ```
 
 > 提示：保存失败时，可以通过 `getErrorMsg()` 方法获取错误信息。
