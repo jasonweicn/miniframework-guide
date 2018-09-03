@@ -11,30 +11,7 @@ MiniFramework 从 1.4.0 版本开始，新增了日志功能，开发者可通�
 define('LOG_ON', true);
 ```
 
-> 提示：保存失败时，可以通过 `getErrorMsg()` 方法获取错误信息。
+> 提示：如果在入口文件中未对常量 LOG\_ON 进行声明，则其默认值为 false。
 
-在实例化 Upload 类时，可传入一个数组类型的参数，对文件保存路径、大小和类型进行设定，例如：
-
-```php
-// 配置数组
-$config = array(
-
-    // 文件保存的根目录
-    'rootPath'  => PUBLIC_PATH . DS . 'uploads',
-
-    // 文件的大小限制（单位：Byte）
-    'maxPath'   => 512000,
-
-    // 允许的类型
-    'allowType' => 'bmp,gif,jpg,jpeg,png'
-
-);
-
-// 实例化 Upload 类时，将配置数组作为参数传入
-$upload = new \Mini\Upload($config);
-```
-
-> 提示：上面示例代码中，配置项可有选择的进行设定，没有设定的，框架会使用默认值处理。
-
-
+当日志功能处于开启状态下，开发者编写的代码运行遇到错误时，MiniFramework 会将捕获到的错误信息写入 /App/Log 目录下以日期作为文件名的log文件中。
 
