@@ -15,7 +15,7 @@ define('LOG_ON', true);
 
 当日志功能处于开启状态下，开发者编写的代码运行遇到错误时，MiniFramework 会将捕获到的错误信息写入应用目录下的 Log 目录下以日期作为文件名的 .log 文件中，例如：
 
-> App/Log/2018-09-03.log
+> /data/htdocs/**App/Log/2018-09-03.log**
 
 
 
