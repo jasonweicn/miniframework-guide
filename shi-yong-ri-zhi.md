@@ -2,7 +2,7 @@
 
 ---
 
-MiniFramework 从 1.2.0 版本开始，新增了支持通过自带的 Upload 类实现文件的上传保存。
+MiniFramework 从 1.4.0 版本开始，新增了日志功能，开发者可通过定义 LOG\_ON 为 true 来开启日志功能。
 
 示例代码如下：
 
