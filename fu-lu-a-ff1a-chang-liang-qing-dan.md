@@ -8,9 +8,10 @@
 | APP\_PATH | 定义应用路径 | string |  |
 | CACHE\_PATH | 定义缓存文件存储路径 | string |  |
 | CONFIG\_PATH | 定义配置文件读取路径 | string |  |
-| DB\_AUTO\_CONNECT | 数据库自动连接特性开关 | boolean | FALSE |
+| DB\_AUTO\_CONNECT | 数据库自动连接功能开关 | boolean | FALSE |
 | DS | 定义系统目录分隔符 | string |  |
 | HTTP\_CACHE\_CONTROL | 定义 HTTP 缓存指令 | string | "private" |
+| LAYOUT\_ON | 布局功能开关 | boolean | FALSE |
 
 APP\_NAMESPACE
 
