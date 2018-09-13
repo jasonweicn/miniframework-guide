@@ -12,6 +12,8 @@
 | DS | 定义系统目录分隔符 | string |  |
 | HTTP\_CACHE\_CONTROL | 定义 HTTP 缓存指令 | string | "private" |
 | LAYOUT\_ON | 布局功能开关 | boolean | FALSE |
+| LAYOUT\_PATH | 定义布局文件读取路径 | string |  |
+| LIB\_PATH | 定义框架核心类库读取路径 | string |  |
 
 APP\_NAMESPACE
 
