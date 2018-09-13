@@ -4,7 +4,9 @@
 
 | 常量 | 用途 | 类型 | 默认值 |
 | :---: | :---: | :---: | :---: |
-|  |  |  |  |
+| APP\_NAMESPACE | 定义应用的命名空间名称 | string | "App" |
+| APP\_PATH | 定义应用路径 | string |  |
+| CACHE\_PATH | 定义缓存文件存储路径 | string |  |
 
 APP\_NAMESPACE
 
@@ -13,12 +15,6 @@ APP\_NAMESPACE
 类型：boolen
 
 默认值：
-
-
-
-
-
-
 
 MiniFramework 从 1.2.0 版本开始，新增了支持通过自带的 Upload 类实现文件的上传保存。
 
