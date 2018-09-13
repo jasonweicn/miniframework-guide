@@ -16,5 +16,5 @@
 * [使用布局](shi-yong-bu-ju.md)
 * [上传文件](shang-chuan-wen-jian.md)
 * [使用日志](shi-yong-ri-zhi.md)
-* [附录A：常量清单](fu-lu-a-ff1a-chang-liang-qing-dan.md)
+* [附录A：常量清单](fu-lu-a-chang-liang-qing-dan.md)
 
