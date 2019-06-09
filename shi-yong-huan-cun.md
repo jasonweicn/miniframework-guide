@@ -7,7 +7,7 @@ MiniFramework 支持三种缓存方式，分别是：Memcached、Redis 和 File�
 ## Memcached
 
 ```php
-$cache = \Mini\Cache::factory ('Memcache',
+$cache = \Mini\Cache\Cache::factory ('Memcache',
     array (
         'host'      => 'localhost', //主机
         'port'      => 11211        //端口
@@ -26,7 +26,7 @@ $test = $cache->get('test');
 ## Redis
 
 ```php
-$cache = \Mini\Cache::factory ('Redis',
+$cache = \Mini\Cache\Cache::factory ('Redis',
     array (
         'host'      => 'localhost', //主机
         'port'      => 11211,       //端口
@@ -46,7 +46,7 @@ $test = $cache->get('test');
 ## File
 
 ```php
-$cache = \Mini\Cache::factory ('File');
+$cache = \Mini\Cache\Cache::factory ('File');
 
 //写入一个名为 test 的缓存，值为 abc，有效时间为 3600 秒
 $cache->set('test', 'abc', 3600);
