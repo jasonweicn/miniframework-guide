@@ -30,8 +30,6 @@ $db2 = Db::factory ('Mysql', $dbConfig['default']);
 ## 直接调用 MySQL 类
 
 ```php
-namespace App\Model;
-
 use Mini\Base\Config;
 use Mini\Db\Mysql; // 引入 MySQL 类
 
