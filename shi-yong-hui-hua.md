@@ -9,7 +9,7 @@ MiniFramework 从 1.0.12 版本开始，新增了 Session 会话类。
 ```php
 namespace App\Controller;
 
-use Mini\Session;
+use Mini\Base\Session;
 
 class Example extends Action
 {
@@ -34,14 +34,14 @@ Session 会话类还支持在开启时传入针对 SESSION 的设定参数，例
 
 ```php
 // 开启会话
-\Mini\Session::start(array(
-    
+\Mini\Base\Session::start(array(
+
     // 设定 SESSION 存储于 Memcached
     'save_handler'  => 'memcache',
-    
+
     // Memcached 主机地址和端口
     'save_path'     => '127.0.0.1:11211'
-    
+
 ));
 ```
 
