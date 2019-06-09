@@ -38,7 +38,7 @@ $db = new Mysql($dbParams);
 ```
 
 > ```
-> MiniFramework 从 2.0 开始支持直接调用 MySQL 类，这样做的好处是便于让 IDE 对类的方法进行提示，方便开发者进行编码
+> MiniFramework 从 2.0 开始支持直接调用 MySQL 类，这样做的好处是便于让 IDE 对类的方法进行提示，为开发者编码提供便利。
 > ```
 
 ## 自动连接方法
