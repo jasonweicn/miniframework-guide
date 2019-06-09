@@ -3,7 +3,6 @@
 ---
 
 ```
-MiniFramework/
 |--- App/                   应用案例
 |    |--- Api/              REST模式的API
 |    |--- Cache/            缓存
@@ -23,8 +22,7 @@ MiniFramework/
 |    |--- View/             视图
 |
 |--- MiniFramework/         框架核心目录
-     |---Functions/         函数库
-     |---Library/           类库
+     |---Base/              基础类库
      |---Bootstrap.php      引导程序
 ```
 
