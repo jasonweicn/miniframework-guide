@@ -8,7 +8,7 @@ MiniFramework 从 1.2.0 版本开始，新增了支持通过自带的 Upload 类
 
 ```php
 // 实例化 Upload 类
-$upload = new \Mini\Upload();
+$upload = new \Mini\Base\Upload();
 
 // 调用 save 方法，将要保存的文件作为参数传入
 $res = $upload->save($_FILES['file']);
@@ -42,7 +42,7 @@ $config = array(
 );
 
 // 实例化 Upload 类时，将配置数组作为参数传入
-$upload = new \Mini\Upload($config);
+$upload = new \Mini\Base\Upload($config);
 ```
 
 > 提示：上面示例代码中，配置项可有选择的进行设定，没有设定的，框架会使用默认值处理。
