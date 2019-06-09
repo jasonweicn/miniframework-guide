@@ -4,11 +4,11 @@
 
 MiniFramework 目前只支持 MySQL 数据库，有手动和自动两种连接方式。
 
-## 手动连接
+## 手动连接（工厂模式）
 
 ```php
-// 如果未在页面顶部用 use 引入 Db，按照下面的写法，在 Db 前加上 \Mini\
-$db = \Mini\Db::factory ('Mysql',
+// 如果未在页面顶部用 use 引入 Db，按照下面的写法，在 Db 前加上 \Mini\Db\
+$db = \Mini\Db\Db::factory ('Mysql',
     array (
         'host'          => 'localhost', // 主机地址
         'port'          => 3306,        // 端口
@@ -21,11 +21,27 @@ $db = \Mini\Db::factory ('Mysql',
 );
 
 // 还可以通过 Config 中的 load() 方法先读取数据库配置，再创建对象
-$dbConfig = \Mini\Config::getInstance()->load('database');
+$dbConfig = \Mini\Base\Config::getInstance()->load('database');
 $db2 = Db::factory ('Mysql', $dbConfig['default']);
 ```
 
 > 提示：`Config::getInstance()->load('database')` 这个方法还可以传入 `database:default` 来直接获取 `default` 中的数据（从 1.0.0 版开始支持）
+
+## 直接调用 MySQL 类
+
+```php
+namespace App\Model;
+
+use Mini\Base\Config;
+use Mini\Db\Mysql; // 引入 MySQL 类
+
+$dbParams = Config::getInstance()->load('database:default');
+$db = new Mysql($dbParams);
+```
+
+> ```
+> MiniFramework 从 2.0 开始支持直接调用 MySQL 类，这样做的好处是便于让 IDE 对类的方法进行提示，方便开发者进行编码
+> ```
 
 ## 自动连接方法
 
@@ -54,7 +70,7 @@ $database['default'] = array (
 ```php
 namespace App\Model;
 
-use Mini\Model;
+use Mini\Base\Model;
 
 class Info extends Model // 自动连接数据库，必须继承核心类 Model
 {
@@ -77,7 +93,7 @@ MiniFramwork 从 1.2.0 版本开始，支持在 Model 模型类中，通过“�
 ```php
 namespace App\Model;
 
-use Mini\Model;
+use Mini\Base\Model;
 
 class User extends Model // 继承 Model 模型类
 {

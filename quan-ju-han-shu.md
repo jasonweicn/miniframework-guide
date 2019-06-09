@@ -11,7 +11,7 @@ $test = array('a', 'b', 'c');
 pushJson($test);
 ```
 
-> 提示：全局函数库位于 `Mini/Functions/Global.func.php`
+> 提示：全局函数库位于 `/Function/Global.func.php`
 
 
 

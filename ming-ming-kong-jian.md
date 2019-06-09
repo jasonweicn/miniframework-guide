@@ -17,7 +17,7 @@ define('APP_NAMESPACE', 'MyApp'); // 请与应用目录名保持一致
 ```php
 namespace App\Controller; // 声明当前页的命名空间
 
-use Mini\Action; // 引入Action，因为Action是框架核心文件，所以前面要加Mini\
+use Mini\Base\Action; // 引入Action，因为Action是框架核心文件，所以前面要加Mini\
 
 class Index extends Action
 {
@@ -33,7 +33,7 @@ class Index extends Action
 ```php
 namespace App\Model; // 声明当前页的命名空间为 App\Model
 
-use Mini\Model; // 引入框架核心文件
+use Mini\Base\Model; // 引入框架核心文件
 
 class Info extends Model
 {
@@ -43,6 +43,8 @@ class Info extends Model
     }
 }
 ```
+
+> 提示：MiniFramework 从 2.0 版开始，对框架核心进行了重构，大部分基础类库已移入 `Mini\Base` 命名空间下。例如上边的案例中，引入框架模型类的代码已经变为 `use Mini\Base\Model` 这样的写法了。
 
 
 
