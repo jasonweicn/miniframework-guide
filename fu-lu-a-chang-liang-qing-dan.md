@@ -15,7 +15,7 @@
 | HTTP\_CACHE\_CONTROL | 定义 HTTP 缓存指令 | 默认值："private" |
 | LAYOUT\_ON | 布局功能开关 | 默认值：FALSE |
 | LAYOUT\_PATH | 定义布局文件读取路径 |  |
-| LIB\_PATH | 定义框架核心类库读取路径 |  |
+| ~~LIB\_PATH~~ | ~~定义框架核心类库读取路径~~ | 在2.x中已删除 |
 | LOG\_LEVEL | 定义日志记录等级 |  |
 | LOG\_ON | 日志功能开关 | 默认值：FALSE |
 | LOG\_PATH | 定义日志存储路径 |  |
