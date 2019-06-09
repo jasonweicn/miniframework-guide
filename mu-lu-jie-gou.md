@@ -26,7 +26,7 @@
      |---Bootstrap.php      引导程序
 ```
 
-> 提示：MiniFramework 从 2.0 版开始，对框架核心进行了重构，大部分基础类库已移入 Base 目录下。
+> 提示：MiniFramework 从 2.0 版开始，对框架核心进行了重构，大部分基础类库已移入 `Base` 目录下。
 
 
 

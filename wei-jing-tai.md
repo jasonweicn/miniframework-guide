@@ -30,7 +30,7 @@ location / {
 }
 ```
 
-> 提示：MiniFramework 从 1.0.10 版本开始，支持使用下划线作为URL分隔符，和支持以.html结尾的伪静态URL，例如：  
+> 提示：MiniFramework 从 1.0.10 版本开始，支持使用下划线作为 URL 分隔符，和支持以 .html 结尾的伪静态 URL ，例如：  
 > `http://localhost/Controller/Action/param1_value1_param2_value2.html`
 
 
