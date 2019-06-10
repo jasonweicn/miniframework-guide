@@ -55,7 +55,7 @@ $cache->set('test', 'abc', 3600);
 $test = $cache->get('test');
 ```
 
-> 提示：使用 `File` 类型的缓存时，缓存文件会存储在默认路径 `App/Cache/` 中，你可以在应用入口文件 `App/ublic/index.php` 中，定义常量 `CACHE_PATH` 的值来改变存储路径。
+> 提示：使用 `File` 类型的缓存时，缓存文件会存储在默认路径 `App/Cache/` 中，你可以在应用入口文件 `App/Public/index.php` 中，定义常量 `CACHE_PATH` 的值来改变存储路径。
 
 
 
