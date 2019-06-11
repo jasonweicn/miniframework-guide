@@ -10,7 +10,7 @@ MiniFramework 能够帮助开发者用最小的学习成本快速构建 Web 应�
 
 ## 获取方式
 
-GitHub源码库地址：[https://github.com/jasonweicn/MiniFramework](https://github.com/jasonweicn/MiniFramework)
+GitHub源码库地址：[https://github.com/jasonweicn/miniframework](https://github.com/jasonweicn/miniframework)
 
 ## 官网地址
 
