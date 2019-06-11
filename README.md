@@ -12,6 +12,12 @@ MiniFramework 能够帮助开发者用最小的学习成本快速构建 Web 应�
 
 GitHub源码库地址：[https://github.com/jasonweicn/miniframework](https://github.com/jasonweicn/miniframework)
 
+通过 Composer 安装，命令如下：
+
+`php composer.phar create-project --prefer-dist --stability=dev jasonweicn/miniframework-app-basic`
+
+> 上述命令会安装一个基于 MiniFramework 的基础应用模板
+
 ## 官网地址
 
 [http://www.miniframework.com](http://www.miniframework.com)
