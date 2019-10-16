@@ -99,7 +99,7 @@ class User extends Model // 继承 Model 模型类
         $this->useDb('default');
 
         // 连贯操作方式查询 id=1 的记录
-        $res = $this->where('id=1')->select();
+        $res = $this->table('dbname')->where('id=1')->select();
 
         // 输出查询结果
         dump($res);
