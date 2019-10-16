@@ -97,18 +97,18 @@ class User extends Model // 继承 Model 模型类
     {
         // 设置当前使用的数据库（这里的 default 是数据库连接对象的名称）
         $this->useDb('default');
-        
+
         // 示例1：连贯操作方式向名为 user 的表中插入一条数据纪录
         $data1 = array('id' => 1, 'name' => '张三');
         $this->table('user')->data($data1)->add();
-        
-        // 示例2：向名为 user 的表中插入多条纪录
+
+        // 示例2：向 user 表中一次插入多条纪录
         $data2 = array(
             array('id' => 2, 'name' => '李四'),
             array('id' => 3, 'name' => '王五')
         );
         $this->table('user')->data($data2)->add();
-        
+
         // 示例3：修改 user 表中 id 为 3 的记录
         $this->table('user')->data(array('name' => '赵六'))->where('id=3')->save();
 
