@@ -100,7 +100,7 @@ class User extends Model // 继承 Model 模型类
 
         // 示例1：连贯操作方式向名为 user 的表中插入一条数据纪录
         $data1 = array('id' => 1, 'name' => '张三');
-        $this->table('user')->data($data1)->add();
+        dump($this->table('user')->data($data1)->add());
 
         // 示例2：向 user 表中一次插入多条纪录
         $data2 = array(
@@ -115,7 +115,7 @@ class User extends Model // 继承 Model 模型类
 
         // 示例4：修改 user 表中 id 为 3 的记录
         dump($this->table('user')->data(array('name' => '赵六'))->where('id=3')->save());
-        
+
         // 示例5：查询 user 表中的全部纪录
         dump($this->table('user')->select());
 
