@@ -121,7 +121,7 @@ class User extends Model // 继承 Model 模型类
 
 
         // 示例5：查询 user 表中 id 为 1 的记录
-        $res = $this->table('user')->where('id=1')->select();
+        $res = $this->table('user')->where('id=1')->select('Row');
 
         // 输出查询结果
         dump($res);
