@@ -108,11 +108,17 @@ class User extends Model // 继承 Model 模型类
             array('id' => 3, 'name' => '王五')
         );
         $this->table('user')->data($data2)->add();
+        
+        // 示例3：删除 user 表中 id 为 2 的纪录
+        $this->table('user')->where->('id=2')->delete();
+        
 
-        // 示例3：修改 user 表中 id 为 3 的记录
+        // 示例4：修改 user 表中 id 为 3 的记录
         $this->table('user')->data(array('name' => '赵六'))->where('id=3')->save();
+        
+        
 
-        // 示例4：查询 user 表中 id 为 1 的记录
+        // 示例5：查询 user 表中 id 为 1 的记录
         $res = $this->table('user')->where('id=1')->select();
 
         // 输出查询结果
