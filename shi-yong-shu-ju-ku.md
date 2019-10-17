@@ -110,30 +110,33 @@ class User extends Model // 继承 Model 模型类
         dump($this->table('user')->data($data2)->add());
 
         // 示例3：删除 user 表中 id 为 2 的纪录
-        dump($this->table('user')->where->('id=2')->delete());
+        dump($this->table('user')->where('id=2')->delete());
 
         // 示例4：修改 user 表中 id 为 3 的记录
         dump($this->table('user')->data(array('name' => '赵六'))->where('id=3')->save());
 
         // 示例5：查询 user 表中的全部纪录
         dump($this->table('user')->select());
-        
+
         // 示例6：查询 user 表中的全部纪录，但只返回前 2 条纪录
         dump($this->table('user')->limit(2)->select());
         // 上方示例6中，limit(2) 等价于 limit(0, 2)，用法与 SQL 中的 LIMIT 语法一致
-        
+
         // 示例7：查询 user 表中的全部纪录，按 id 字段倒序排列结果
         dump($this->table('user')->order(array('id' => 'DESC'))->select());
         // 上方示例7中的 order() 方法也可直接传入字符串，例如 order('id DESC')
 
-        // 示例5：查询 user 表中 id 为 1 的记录
+        // 示例8：查询 user 表中 id 为 1 的记录
         $res = $this->table('user')->where('id=1')->select('Row');
+        // 上方示例8中，select() 方法传入 Row 参数时返回的结果为键值对形式的一维数组
 
         // 输出查询结果
         dump($res);
     }
 }
 ```
+
+> 提示：MiniFramework 在 2.1.0 开始支持 add、save、delete 和 data 四个连贯操作的方法，并对原有的 order、limit、group 和 select 方法进行了改进和完善。
 
 
 
