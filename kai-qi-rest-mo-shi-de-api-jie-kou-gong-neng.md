@@ -5,7 +5,7 @@
 MiniFramework 从 1.0.0 版开始，增加了对 RESTful 的支持，可以在入口文件 `Public/index.php` 中，定义常量 `REST_ON` 的值为 `true` 开启 REST 模式的 API 接口功能，例如：
 
 ```php
-define('REST_ON', true);
+const REST_ON = true;
 ```
 
 开启 REST 后，可以访问应用案例中附带的一个名为 Version 的 Api 接口 demo 进行测试。

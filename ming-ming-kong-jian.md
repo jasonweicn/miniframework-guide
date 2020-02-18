@@ -9,7 +9,7 @@
 `App` 对应你的应用，可以通过在应用的入口文件中，定义常量 `APP_NAMESPACE` 的值来改变应用的命名空间，例如：
 
 ```php
-define('APP_NAMESPACE', 'MyApp'); // 请与应用目录名保持一致
+const APP_NAMESPACE = 'MyApp' // 请与应用目录名保持一致
 ```
 
 创建控制器时，请在页面顶部放置用于声明命名空间的代码，例如：

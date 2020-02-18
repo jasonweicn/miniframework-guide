@@ -8,7 +8,7 @@ MiniFramework 从 1.4.0 版本开始，新增了日志功能，开发者可通�
 
 ```php
 // 开启日志（生产环境建议关闭）
-define('LOG_ON', true);
+const LOG_ON = true;
 ```
 
 > 提示：如果在入口文件中未对常量 LOG\_ON 进行声明，则其默认值为 false。

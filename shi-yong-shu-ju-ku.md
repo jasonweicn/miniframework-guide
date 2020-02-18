@@ -9,7 +9,7 @@ MiniFramework 目前只支持 MySQL 数据库，有手动和自动两种连接�
 ```php
 // 如果未在页面顶部用 use 引入 Db，按照下面的写法，在 Db 前加上 \Mini\Db\
 $db = \Mini\Db\Db::factory ('Mysql',
-    array (
+    [
         'host'          => 'localhost', // 主机地址
         'port'          => 3306,        // 端口
         'dbname'        => 'mydbname',  // 库名
@@ -17,7 +17,7 @@ $db = \Mini\Db\Db::factory ('Mysql',
         'passwd'        => '123456',    // 密码
         'charset'       => 'utf8',      // 字符编码
         'persistent'    => false        // 是否启用持久连接 （ true | false ）
-    )
+    ]
 );
 
 // 还可以通过 Config 中的 load() 方法先读取数据库配置，再创建对象
@@ -50,7 +50,7 @@ define('DB_AUTO_CONNECT', true);
 同时，还需要在 `Config/database.php` 中对数据库连接进行配置，例如：
 
 ```php
-$database['default'] = array (
+$database['default'] = [
     'host'          => 'localhost', // 主机地址
     'port'          => 3306,        // 端口
     'dbname'        => 'test',      // 库名
@@ -58,7 +58,7 @@ $database['default'] = array (
     'passwd'        => '',          // 密码
     'charset'       => 'utf8',      // 字符编码
     'persistent'    => false        // 是否启用持久连接 （ true | false ）
-);
+];
 ```
 
 接下来，就可以在模型中通过 `$this->loadDb()` 方法直接加载数据库对象了，例如：
