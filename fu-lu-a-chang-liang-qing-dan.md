@@ -10,7 +10,8 @@
 | APP\_PATH | 定义应用路径 |  |
 | CACHE\_PATH | 定义缓存文件存储路径 |  |
 | CONFIG\_PATH | 定义配置文件读取路径 |  |
-| CSRF\_TOKEN\_ON | CSRF令牌功能开关 | ~~默认值：TRUE，在2.0版新增，~~从2.4.0版开始默认值变更为：FALSE |
+| CSRF\_TOKEN\_ON | CSRF 令牌功能开关 | ~~默认值：TRUE，在2.0版新增，~~从2.4.0版开始默认值变更为：FALSE |
+| CSRF\_TYPE | 定义客户端获取 CSRF 令牌的方式 | 默认值："cookie" |
 | DB\_AUTO\_CONNECT | 数据库自动连接功能开关 | 默认值：FALSE |
 | DS | 定义系统目录分隔符 |  |
 | HTTP\_CACHE\_CONTROL | 定义 HTTP 缓存指令 | 默认值："private" |
