@@ -7,7 +7,7 @@ MiniFramework 支持三种缓存方式，分别是：Memcached、Redis 和 File�
 ## Memcached
 
 ```php
-$cache = \Mini\Cache\Cache::factory ('Memcache',
+$cache = \Mini\Cache\Cache::factory ('Memcache', // 如 PHP 安装的是 Memcached 扩展，就传入 'Memcached'
     array (
         'host'      => 'localhost', //主机
         'port'      => 11211        //端口
