@@ -6,6 +6,16 @@ MiniFramework 在设置了 Rewrite 规则后，可实现类似下面这种伪静
 
 `http://localhost/Controller/Action/param1/value1/param2/value2`
 
+当框架以伪静态模式访问时，URL中的参数需要通过框架内置方法获取，例如：
+
+`$params = $this->params->getParams(); //获取全部参数`
+
+或者，也可以这样：
+
+`$param1 = $this->params->getParam('param1'); //获取指定的参数`
+
+> 提示：伪静态时通过框架内置方法获取URL参数的设计初衷是尽量不去污染$\_GET。
+
 ## 运行于 Apache 的设置方法
 
 向 Public 目录中添加一个 .htaccess 文件（附带的应用案例中已提供），内容如下：
