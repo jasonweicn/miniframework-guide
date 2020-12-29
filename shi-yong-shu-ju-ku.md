@@ -132,15 +132,15 @@ class User extends Model // 继承 Model 模型类
 
         // 输出查询结果
         dump($res);
-        
+
         // 关于 where 方法，还支持通过参数来构造查询条件，例如下面的示例：
-        
+
         // 示例9：查询 id 等于 1 或 2 的记录
-        $res = $this->table('user')->where('id', [1, 2], 'OR')->select();
-        // 上边的查询参数，最终会构造为 id=1 OR id=2
-        
+        $res = $this->table('user')->where('id', [1, 2])->select();
+        // 上边的查询参数，最终会构造为 id=1 OR id=2，逻辑运算符默认为“OR”
+
         // 示例10：查询 id 不等于 1 且 不等于 2 的记录
-        $res = $this->table('user')->where('id', '<>', [1, 2])->select();
+        $res = $this->table('user')->where('id', '<>', [1, 2], 'AND')->select();
         // 上边的查询参数，最终会构造为 id<>1 AND id<>2
 
     }
@@ -148,7 +148,7 @@ class User extends Model // 继承 Model 模型类
 ```
 
 > 提示1：MiniFramework 在 2.1.0 开始支持 add、save、delete 和 data 四个连贯操作的方法，并对原有的 order、limit、group 和 select 方法进行了改进和完善。
-
+>
 > 提示2：MiniFramework 2.5.0 中针对 where 方法新增了通过参数构造查询条件的特性。
 
 
