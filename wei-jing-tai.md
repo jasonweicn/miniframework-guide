@@ -43,5 +43,22 @@ location / {
 > 提示：MiniFramework 从 1.0.10 版本开始，支持使用下划线作为 URL 分隔符，和支持以 .html 结尾的伪静态 URL ，例如：  
 > `http://localhost/Controller/Action/param1_value1_param2_value2.html`
 
+## 自定义伪静态时URL参数的分隔符号
+
+MiniFramework 从 2.6.0 版本开始，支持通过常量 URL\_SPLIT\_SYMBOL 来自定义伪静态时 URL 参数的分隔符号。
+
+例如，可以在应用入口文件 index.php 中进行定义：
+
+```
+// 定义分隔符号为减号
+const URL_SPLIT_SYMBOL = '-';
+```
+
+通过上边的定义，便可实现类似下边的伪静态URL：
+
+```
+http://localhost/Controller/Action/param1-value1-param2-value2.html
+```
+
 
 
