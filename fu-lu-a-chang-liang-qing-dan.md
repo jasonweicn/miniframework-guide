@@ -26,6 +26,7 @@
 | REST\_ON | REST风格的接口功能开关 | 默认值：FALSE |
 | SHOW\_DEBUG | 是否显示开发者调试信息开关 | 默认值：TRUE |
 | SHOW\_ERROR | 是否显示错误信息开关 | 默认值：FALSE |
+| URL\_SPLIT\_SYMBOL | 自定义伪静态URL参数分割符号 | 默认值："\_" |
 
 
 
