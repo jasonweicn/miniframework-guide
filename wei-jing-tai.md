@@ -60,5 +60,11 @@ const URL_SPLIT_SYMBOL = '-';
 http://localhost/Controller/Action/param1-value1-param2-value2.html
 ```
 
+结合实际应用场景，例如：
+
+```
+http://localhost/user/info/id-1.html
+```
+
 
 
