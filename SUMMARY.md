@@ -15,8 +15,8 @@
 * [使用会话](shi-yong-hui-hua.md)
 * [使用布局](shi-yong-bu-ju.md)
 * [上传文件](shang-chuan-wen-jian.md)
-* [使用日志](shi-yong-ri-zhi.md)
+* [日志](ri-zhi.md)
+  * [日志存入文件](ri-zhi/ri-zhi-cun-ru-wen-jian.md)
+  * [日志存入数据库](ri-zhi/ri-zhi-cun-ru-shu-ju-ku.md)
 * [附录A：常量清单](fu-lu-a-chang-liang-qing-dan.md)
-
-
 
