@@ -2,7 +2,7 @@
 
 ---
 
-开发者可通过定义 `LOG_MODE`、 `LOG_DB_CONFIG` 和 `LOG_TABLE_NAME` 三个常量来实现将日志存入文件，例如：
+MiniFramework 从 2.6.0 版本开始支持日志存储到数据库的特性。开发者可通过定义 `LOG_MODE`、 `LOG_DB_CONFIG` 和 `LOG_TABLE_NAME` 三个常量来实现将日志存入文件，例如：
 
 ```php
 // 首先要激活日志功能（默认值为：false）
