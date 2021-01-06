@@ -17,4 +17,4 @@ const LOG_PATH = '/data/htdocs/myapp/logs';
 
 通过上边的代码，便实现了将日志以文件的形式存储到指定的路径下。当开发者编写的代码运行遇到错误时，MiniFramework 会将捕获到的错误信息按 `yyyy-mm-dd.log` 的文件命名方式进行存储，例如：
 
-> /data/htdocs/**myapp/logs/2021-01-06.log**
+> /data/htdocs/myapp/logs/**2021-01-06.log**
