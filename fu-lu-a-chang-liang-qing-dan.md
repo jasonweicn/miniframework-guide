@@ -30,6 +30,7 @@
 | SHOW\_DEBUG | 是否显示开发者调试信息开关 | V1.0.0及以上 | 默认值：TRUE |
 | SHOW\_ERROR | 是否显示错误信息开关 | V0.3.0及以上 | 默认值：FALSE |
 | URL\_SPLIT\_SYMBOL | 自定义伪静态URL参数分割符号 | V2.6.0及以上 | 默认值："\_" |
+| URL\_SUFFIX | 定义伪静态扩展名 | V2.6.0及以上 | 默认值："htm\|html\|shtml" |
 
 
 
