@@ -45,7 +45,7 @@ location / {
 
 ## 自定义伪静态扩展名
 
-MiniFramework 从 2.6.0 版本开始，支持通过常量 URL\_SUFFIX 定义伪静态扩展名。
+MiniFramework 从 2.6.0 版本开始，支持通过常量 URL\_SUFFIX 定义伪静态扩展名，默认值为"htm\|html\|shtml"。
 
 例如，可以在应用入口文件 index.php 中进行定义：
 
@@ -60,7 +60,7 @@ MiniFramework 从 2.6.0 版本开始，支持通过常量 URL\_SPLIT\_SYMBOL 来
 
 例如，可以在应用入口文件 index.php 中进行定义：
 
-```
+```php
 // 定义分隔符号为减号
 const URL_SPLIT_SYMBOL = '-';
 ```
