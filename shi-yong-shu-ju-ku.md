@@ -143,6 +143,21 @@ class User extends Model // 继承 Model 模型类
         $res = $this->table('user')->where('id', '<>', [1, 2], 'AND')->select();
         // 上边的查询参数，最终会构造为 id<>1 AND id<>2
 
+        // 关于联表查询的示例
+
+        // 示例11：INNER JOIN
+        $res = $this->from('user')->innerjoin('user_address', 'user.id=user_address.id')->select();
+
+        // 示例12：LEFT JOIN
+        $res = $this->from('user')->leftjoin('user_address', 'user.id=user_address.id')->select();
+
+        // 示例13：RIGHT JOIN
+        $res = $this->from('user')->rightjoin('user_address', 'user.id=user_address.id')->select();
+
+        // 示例14：统一封装的 JOIN 方法，下边的代码相当于调用 rightjoin 方法
+        $res = $this->from('user')->join('user_address', 'user.id=user_address.id', 'RIGHT')->select();
+        // join 方法的第三方参数默认值为"INNER"
+
     }
 }
 ```
@@ -151,4 +166,4 @@ class User extends Model // 继承 Model 模型类
 >
 > 提示2：MiniFramework 2.5.0 中针对 where 方法新增了通过参数构造查询条件的特性。
 >
-> 提示3: MiniFramework 2.7.0 中，新增了更符合习惯的 from 方法，与原 table 方法的用法完全一致。
+> 提示3：MiniFramework 2.7.0 中，新增了更符合习惯的 from 方法，与原 table 方法的用法完全一致。
