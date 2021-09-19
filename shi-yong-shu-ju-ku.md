@@ -150,6 +150,5 @@ class User extends Model // 继承 Model 模型类
 > 提示1：MiniFramework 在 2.1.0 开始支持 add、save、delete 和 data 四个连贯操作的方法，并对原有的 order、limit、group 和 select 方法进行了改进和完善。
 >
 > 提示2：MiniFramework 2.5.0 中针对 where 方法新增了通过参数构造查询条件的特性。
-
-
-
+>
+> 提示3:MiniFramework 2.7.0 中，新增了更符合习惯的 from 方法，与原 table 方法的用法完全一致。
