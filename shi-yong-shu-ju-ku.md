@@ -167,3 +167,6 @@ class User extends Model // 继承 Model 模型类
 > 提示2：MiniFramework 2.5.0 中针对 where 方法新增了通过参数构造查询条件的特性。
 >
 > 提示3：MiniFramework 2.7.0 中，新增了更符合习惯的 from 方法，与原 table 方法的用法完全一致。
+
+
+
