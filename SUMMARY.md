@@ -17,7 +17,6 @@
 * [模板引擎](mo-ban-yin-qing.md)
   * [开启模板引擎](mo-ban-yin-qing/kai-qi-mo-ban-yin-qing.md)
   * [输出变量](mo-ban-yin-qing/shu-chu-bian-liang.md)
-  * [代码块](mo-ban-yin-qing/dai-ma-kuai.md)
   * [模板缓存](mo-ban-yin-qing/mo-ban-huan-cun.md)
 * [上传文件](shang-chuan-wen-jian.md)
 * [日志](ri-zhi.md)
