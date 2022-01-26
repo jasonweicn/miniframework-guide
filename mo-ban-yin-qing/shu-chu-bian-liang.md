@@ -28,5 +28,17 @@ $this->view->display();
 
 > 提示：上述代码中，{$baseUrl}是一个框架默认的变量，用于输出基础路径。（更多模板标记可参考附带的应用案例）
 
+经过模板引擎编译后为：
+
+```php
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title><?php echo $this->title; ?></title>
+<link rel="stylesheet" type="text/css" href="<?php echo $this->baseUrl; ?>/css/default.css">
+</head>
+```
+
 
 
