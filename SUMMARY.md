@@ -23,5 +23,5 @@
   * [日志存入文件](ri-zhi/ri-zhi-cun-ru-wen-jian.md)
   * [日志存入数据库](ri-zhi/ri-zhi-cun-ru-shu-ju-ku.md)
 * [附录A：常量清单](fu-lu-a-chang-liang-qing-dan.md)
-* [附录B：模板标签清单](fu-lu-b-ff1a-mo-ban-biao-qian-qing-dan.md)
+* [附录B：模板标签清单](fu-lu-b-mo-ban-biao-qian-qing-dan.md)
 
