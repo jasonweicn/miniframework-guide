@@ -1,0 +1,14 @@
+{
+    "title": "MiniFramework 开发者指南",
+    "language":"zh",
+    "plugins": [
+        "code",
+        "-search"
+        "-sharing"
+    ],
+    "pluginsConfig": {
+        "code": {
+            "copyButtons": true
+        }
+    }
+}
