@@ -3,7 +3,9 @@
     "language":"zh",
     "plugins": [
         "code",
-        "-search"
+        "copy-code-button",
+        "back-to-top-button",
+        "-search",
         "-sharing"
     ],
     "pluginsConfig": {
